@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Myblog</title>
+      <title>python的鸭子类型</title>
       <link>https://zhangpengfei225.github.io/post/myblog/</link>
       <pubDate>Mon, 02 Dec 2019 18:16:21 +0800</pubDate>
       
       <guid>https://zhangpengfei225.github.io/post/myblog/</guid>
-      <description>你好</description>
+      <description>什么是鸭子类型 一个数据类型只要他具有某种行为，它就认是某种类型</description>
     </item>
     
     <item>
