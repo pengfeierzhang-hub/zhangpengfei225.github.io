@@ -6,10 +6,19 @@
     <description>Recent content in Posts on flyer的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Dec 2019 18:16:21 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangpengfei225.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>交叉熵</title>
+      <link>https://zhangpengfei225.github.io/post/entropy/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangpengfei225.github.io/post/entropy/</guid>
+      <description>损失函数: 交叉熵 1.熵: 该概念了来源于信息论中，用来衡量信心的不确定程度。熵在信息论中也称为信息熵或者香农熵，熵越大代表不确定性越大。对所有</description>
+    </item>
     
     <item>
       <title>python的鸭子类型</title>

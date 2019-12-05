@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="python的鸭子类型" />
-    <meta property="og:title" content="python的鸭子类型" />
-    <meta property="twitter:title" content="python的鸭子类型" />
+    <meta name="title" content="交叉熵" />
+    <meta property="og:title" content="交叉熵" />
+    <meta property="twitter:title" content="交叉熵" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="张鹏飞, zhaohuabing, Zhaohuabing, , 张鹏飞的网络日志, 张鹏飞的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>python的鸭子类型-张鹏飞的博客 | Zhaohuabing Blog</title>
+    <title>交叉熵-张鹏飞的博客 | Zhaohuabing Blog</title>
 
-    <link rel="canonical" href="/post/myblog/">
+    <link rel="canonical" href="/post/entropy/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -168,7 +168,7 @@
                     <div class="tags">
                         
                     </div>
-                    <h1>python的鸭子类型</h1>
+                    <h1>交叉熵</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -176,7 +176,7 @@
                                 flyer的博客
                          
                         on 
-                        Monday, December 2, 2019
+                        Tuesday, December 3, 2019
                         
                         
                         
@@ -206,18 +206,40 @@
                 </header>
                 <nav id="TableOfContents">
 <ul>
-<li>
+<li><a href="#损失函数-交叉熵">损失函数: 交叉熵</a>
 <ul>
-<li><a href="#什么是鸭子类型">什么是鸭子类型</a></li>
+<li><a href="#1-熵">1.熵:</a></li>
+<li><a href="#2-相对熵">2.相对熵：</a></li>
+<li><a href="#3-分类问题适合使用交叉熵作为损失函数">3. 分类问题适合使用交叉熵作为损失函数</a></li>
 </ul></li>
 </ul>
 </nav>
                 
                 
 
-<h2 id="什么是鸭子类型">什么是鸭子类型</h2>
+<h1 id="损失函数-交叉熵">损失函数: 交叉熵</h1>
 
-<p>一个数据类型只要他具有某种行为，它就认是某种类型，它看起来像鸭子，它就是鸭子</p>
+<h2 id="1-熵">1.熵:</h2>
+
+<p>该概念了来源于信息论中，用来衡量信心的不确定程度。熵在信息论中也称为信息熵或者香农熵，熵越大代表不确定性越大。对所有可能发生的事件产生的信息量的期望。
+公式如下:
+H(x) = -$\sum_{i=1}^n$p($x_i$)log(p($x_i$))</p>
+
+<h2 id="2-相对熵">2.相对熵：</h2>
+
+<p>相对熵又称为KL离散度，公式如下：
+$D<em>{KL}(P||Q) = \sum</em>{i=1}^np(x_i)log(\frac{p(x_i)}{q(x_i)}) $</p>
+
+<p>处理之后即可得到：
+$D<em>{KL}(P||Q) = -H(p(x)) +[-\sum</em>{i=1}^np(x_i)log(q(x_i))]$</p>
+
+<p>前半部分是熵，后半部分是交叉熵
+$H(p,q) = -\sum_{i=1}^np(x_i)log(q(x_i))$
+机器学习中，我们常常使用KL散度来评估predict和label之间的差别,但是由于KL散度的前半部分是一个常量，所以我们常常将后半部分的交叉熵作为损失函数，其实二者是一样的</p>
+
+<h2 id="3-分类问题适合使用交叉熵作为损失函数">3. 分类问题适合使用交叉熵作为损失函数</h2>
+
+<p>在分类问题中适合使用交叉熵作为损失函数，满足误差越大，下降的越快。而MSE(均方误差)适合回归问题。</p>
 
 
                 
@@ -266,15 +288,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" data-toggle="tooltip" data-placement="top" title="数据处理">&larr;
+                        <a href="/post/myblog/" data-toggle="tooltip" data-placement="top" title="python的鸭子类型">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/entropy/" data-toggle="tooltip" data-placement="top" title="交叉熵">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
 
