@@ -23,16 +23,19 @@
   </url>
   
   <url>
-    <loc>https://zhangpengfei225.github.io/post/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</loc>
-    <lastmod>2019-12-02T18:16:21+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zhangpengfei225.github.io/categories/</loc>
   </url>
   
   <url>
+    <loc>https://zhangpengfei225.github.io/categories/python/</loc>
+  </url>
+  
+  <url>
     <loc>https://zhangpengfei225.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zhangpengfei225.github.io/post/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</loc>
   </url>
   
 </urlset>
