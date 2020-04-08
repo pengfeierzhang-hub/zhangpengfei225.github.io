@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>flyer的博客</title>
-    <link>https://zhangpengfei225.github.io/</link>
+    <link>https://pengfeierzhang-hub.github.io/</link>
     <description>Recent content on flyer的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://zhangpengfei225.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pengfeierzhang-hub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>交叉熵</title>
-      <link>https://zhangpengfei225.github.io/post/entropy/</link>
+      <link>https://pengfeierzhang-hub.github.io/post/entropy/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangpengfei225.github.io/post/entropy/</guid>
+      <guid>https://pengfeierzhang-hub.github.io/post/entropy/</guid>
       <description>损失函数: 交叉熵 1.熵: 该概念了来源于信息论中，用来衡量信心的不确定程度。熵在信息论中也称为信息熵或者香农熵，熵越大代表不确定性越大。对所有</description>
     </item>
     
     <item>
       <title>python的鸭子类型</title>
-      <link>https://zhangpengfei225.github.io/post/myblog/</link>
+      <link>https://pengfeierzhang-hub.github.io/post/myblog/</link>
       <pubDate>Mon, 02 Dec 2019 18:16:21 +0800</pubDate>
       
-      <guid>https://zhangpengfei225.github.io/post/myblog/</guid>
+      <guid>https://pengfeierzhang-hub.github.io/post/myblog/</guid>
       <description>什么是鸭子类型 一个数据类型只要他具有某种行为，它就认是某种类型，它看起来像鸭子，它就是鸭子</description>
     </item>
     
     <item>
       <title>数据处理</title>
-      <link>https://zhangpengfei225.github.io/post/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</link>
+      <link>https://pengfeierzhang-hub.github.io/post/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangpengfei225.github.io/post/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</guid>
+      <guid>https://pengfeierzhang-hub.github.io/post/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</guid>
       <description>使用pandas进行数据处理</description>
     </item>
     
